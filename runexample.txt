@@ -3,3 +3,9 @@ docker run  --rm --volume=$(pwd)/images:/my-images kerrys-imageconverter  -resiz
 docker run --entrypoint=/bin/bash -it   --rm --volume=$(pwd)/images:/my-images kerrys-imageconverter
 
 type in bash command to get help to use it: convert 
+
+
+
+
+// run GUI Docker Ubuntu 22.04 and installs TigerVNC for the VNC server on docker container that uses noVNC for the HTML5-based webclient
+docker run -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
